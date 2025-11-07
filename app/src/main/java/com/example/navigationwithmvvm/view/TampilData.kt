@@ -14,5 +14,14 @@ fun TampilData(
         Pair(first = stringResource(id = R.string.alamat), second = "Yogyakarta")
     )
 
-
+    Scaffold(modifier = Modifier,
+        topBar = {
+            TopAppBar(
+                title = { Text(text = stringResource(id = R.string.tampil), color = Color.White) },
+                colors = TopAppBarDefaults.topAppBarColors(
+                    containerColor = colorResource(id = R.color.teal_700)
+                )
+            )
+        }
+    )
 }
