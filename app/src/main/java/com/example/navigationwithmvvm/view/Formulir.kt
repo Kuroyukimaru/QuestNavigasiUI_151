@@ -80,6 +80,14 @@ fun FormIsian(
 
             Spacer(modifier = Modifier.height(30.dp))
 
+            // Tombol Submit
+            Button(
+                onClick = OnSubmitBtnClick,
+                colors = ButtonDefaults.buttonColors(containerColor = colorResource(id = R.color.teal_700))
+            ) {
+                Text("Submit", color = Color.White)
+            }
+
 
     }
 }
