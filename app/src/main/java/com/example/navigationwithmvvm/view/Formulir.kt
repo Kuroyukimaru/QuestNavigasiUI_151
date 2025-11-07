@@ -78,16 +78,17 @@ fun FormIsian(
                 }
             }
 
-            Spacer(modifier = Modifier.height(30.dp))
+            OutlinedTextField(
+                value = "",
+                singleLine = true,
+                modifier = Modifier
+                    .padding(top = 30.dp)
+                    .width(250.dp),
+                label = { Text(text = "Alamat") },
+                onValueChange = {}
+            )
 
-            // Tombol Submit
-            Button(
-                onClick = OnSubmitBtnClick,
-                colors = ButtonDefaults.buttonColors(containerColor = colorResource(id = R.color.teal_700))
-            ) {
-                Text("Submit", color = Color.White)
-            }
-
-
+            
+        }
     }
 }
