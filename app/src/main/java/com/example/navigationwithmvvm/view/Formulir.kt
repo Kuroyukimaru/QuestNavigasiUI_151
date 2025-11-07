@@ -27,6 +27,28 @@ fun FormIsian(
                 .fillMaxSize(),
             verticalArrangement = Arrangement.Top,
             horizontalAlignment = Alignment.CenterHorizontally
-        )
+        ) {
+
+            // Nama Lengkap
+            OutlinedTextField(
+                value = nama,
+                onValueChange = { nama = it },
+                singleLine = true,
+                label = { Text("Nama Lengkap") },
+                modifier = Modifier
+                    .padding(top = 20.dp)
+                    .width(250.dp)
+            )
+
+            HorizontalDivider(
+                modifier = Modifier
+                    .padding(vertical = 20.dp)
+                    .width(250.dp),
+                thickness = 1.dp,
+                color = Color.Red
+            )
+
+
+        }
     }
 }
